@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    tools:context="com.example.michael.higherlower.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Higher Lower Game"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guess whether the next number to appear below will be higher or lower than the number currently being displayed. Numbers range from 1-100. Choose Wisely!"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Correct: 0"
+            android:textSize="14dp"
+            android:id="@+id/correct" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="40dp"
+            android:id="@+id/dispNumb" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Incorrect: 0"
+            android:textSize="14dp"
+            android:id="@+id/incorrect" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="H"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:onClick="buttonChoice"
+            android:id="@+id/higherButton"
+            android:background="#0239fd"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="L"
+            android:textSize="40dp"
+            android:textColor="#ffffff"
+            android:id="@+id/lowerButton"
+            android:onClick="buttonChoice"
+            android:layout_weight="1"
+            android:background="#ff0101" />
+    </LinearLayout>
+
+</LinearLayout>
